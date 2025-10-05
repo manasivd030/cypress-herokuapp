@@ -2,13 +2,15 @@ name: Cypress + Allure
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - '**'          # run on any branch push; change to just 'main' if you prefer
   pull_request:
+  workflow_dispatch:   # lets you run it manually from the Actions tab
 
 permissions:
   contents: read
-  pages: write      # for GitHub Pages
-  id-token: write   # for GitHub Pages
+  pages: write
+  id-token: write
 
 jobs:
   test:
@@ -24,21 +26,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Clean allure (just in case)
+      - name: Clean allure
         run: npx rimraf allure-results allure-report
 
-      # ---- Run tests ----
       - name: Run Component tests (CT)
         run: npm run test:ct
 
       - name: Run E2E tests
         run: npm run test:e2e
 
-      # ---- Build Allure report ----
       - name: Generate Allure report
         run: npm run allure:generate
 
-      # ---- Upload artifacts to the run ----
       - name: Upload Allure HTML
         uses: actions/upload-artifact@v4
         with:
@@ -67,7 +66,6 @@ jobs:
           path: cypress/screenshots
           if-no-files-found: ignore
 
-  # ---- OPTIONAL: Publish Allure to GitHub Pages ----
   publish-pages:
     if: github.ref == 'refs/heads/main'
     needs: test
