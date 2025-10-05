@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"f307d75c75a62b21cd2084de83e1318b","name":"Herokuapp Login (E2E)","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}},{"uid":"be757e4b6b26c0d66df7aa8ac85571a3","name":"Herokuapp Login – DOM contract (Component Test)","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

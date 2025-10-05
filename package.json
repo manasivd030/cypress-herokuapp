@@ -1,0 +1,45 @@
+{
+  "name": "cypress-herokuapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:ct": "cypress run --component",
+    "cy:run:e2e": "cypress run --e2e",
+
+    "clean:allure": "rimraf allure-results allure-report",
+
+    "test:ct": "cypress run --component",
+    "test:e2e": "cypress run --e2e",
+
+    "test:ct:clean": "npm run clean:allure && cypress run --component",
+    "test:e2e:clean": "npm run clean:allure && cypress run --e2e",
+
+    "allure:generate": "allure generate --clean allure-results -o allure-report",
+    "allure:open": "allure open allure-report",
+
+    "test:all": "npm run clean:allure && npm run test:ct && npm run test:e2e && npm run allure:generate"
+  },
+
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "@testing-library/cypress": "^10.1.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "allure-commandline": "^2.34.1",
+    "cypress": "^15.3.0",
+    "rimraf": "^6.0.1",
+    "vite": "^7.1.9"
+  }
+}

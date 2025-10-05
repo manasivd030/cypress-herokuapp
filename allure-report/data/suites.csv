@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1084","rejects invalid password (valid username)","","Sun Oct 05 17:28:53 CEST 2025","passed","Sun Oct 05 17:28:54 CEST 2025","","Herokuapp Login (E2E)","",""
+"","1883","logs out after successful login","","Sun Oct 05 17:28:54 CEST 2025","passed","Sun Oct 05 17:28:56 CEST 2025","","Herokuapp Login (E2E)","",""
+"","1160","rejects invalid username & password","","Sun Oct 05 17:28:52 CEST 2025","passed","Sun Oct 05 17:28:53 CEST 2025","","Herokuapp Login (E2E)","",""
+"","1013","has username, password, and a submit button with expected labels","","Sun Oct 05 17:28:18 CEST 2025","passed","Sun Oct 05 17:28:19 CEST 2025","","Herokuapp Login – DOM contract (Component Test)","",""
+"","3928","logs in with valid credentials","","Sun Oct 05 17:28:48 CEST 2025","passed","Sun Oct 05 17:28:52 CEST 2025","","Herokuapp Login (E2E)","",""
