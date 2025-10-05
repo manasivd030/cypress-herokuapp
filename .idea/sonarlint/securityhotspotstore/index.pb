@@ -21,3 +21,12 @@ K
 cypress/support/commands.js,b\6\b695c254a66b2c44bc01902a73cf931faeb12d7e
 T
 $cypress/support/component-index.html,9\7\9733ffc3d87ea65bbfedbe4ea916d50a6a8dbb6e
+L
+.github/workflows/cypres.yml,1\7\179cdc8f3627542b9a76109cba963af0d64fb9a6
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
